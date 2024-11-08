@@ -5,7 +5,6 @@ echo "
 
 frontend health
   mode http
-  timeout connect 10s
   timeout client 7s
   maxconn 10
   bind 127.0.0.1:80
