@@ -6,8 +6,8 @@ frontend health
   mode http
   timeout client 7s
   maxconn 10
-  bind 127.0.0.1:80
-  http-request return status 200 if { src 127.0.0.0/8 } { path /health }
+  bind :3003
+  http-request return status 200 if { path /health }
 " >> ./haproxy.cfg
 
 haproxy -f ./haproxy.cfg
