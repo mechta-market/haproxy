@@ -2,7 +2,6 @@
 
 echo "${HAPROXY_CONFIG}" > ./haproxy.cfg
 echo "
-
 frontend health
   mode http
   timeout client 7s
