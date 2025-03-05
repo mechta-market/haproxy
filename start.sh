@@ -10,4 +10,4 @@ frontend health
   http-request return status 200 if { path /health }
 " >> ./haproxy.cfg
 
-haproxy -f ./haproxy.cfg
+exec haproxy -f ./haproxy.cfg
