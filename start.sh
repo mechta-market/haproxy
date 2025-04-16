@@ -2,4 +2,4 @@
 
 echo "${HAPROXY_CONFIG}" > ./haproxy.cfg
 
-exec haproxy -vv -f ./haproxy.cfg
+exec haproxy -v -f ./haproxy.cfg
