@@ -8,6 +8,4 @@ USER haproxy
 
 COPY --chmod=755 start.sh ./
 
-HEALTHCHECK --start-period=4s --interval=10s --timeout=2s --retries=3 CMD curl -f http://127.0.0.1:3003/health || false
-
 CMD ["./start.sh"]
